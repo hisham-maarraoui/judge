@@ -1,0 +1,105 @@
+.judge0-file-menu {
+    min-width: 15rem !important;
+}
+
+#judge0-chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+}
+
+#judge0-chat-container > .ui.menu {
+    border-bottom: none;
+}
+
+#judge0-chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+#judge0-chat-messages pre {
+    overflow-x: auto;
+}
+
+.judge0-user-message {
+    margin-left: auto !important;
+    margin-right: 1em !important;
+    margin-top: 1em !important;
+    max-width: 66%;
+    overflow-wrap: break-word;
+    width: fit-content;
+}
+
+#judge0-chat-input-container {
+    margin-top: 0;
+}
+
+#judge0-status-line:empty {
+    display: none;
+}
+
+.judge0-hidden, .judge0-style-hidden {
+    display: none !important;
+}
+.inline-chat-container {
+    position: absolute;
+    z-index: 100;
+    background: var(--vscode-editor-background);
+    border: 1px solid var(--vscode-editor-lineHighlightBorder);
+    border-radius: 6px;
+    padding: 8px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.inline-chat-container .ui.input {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.inline-chat-messages {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 8px;
+}
+
+.inline-chat-message {
+    margin: 4px 0;
+    padding: 6px;
+    border-radius: 4px;
+    word-wrap: break-word;
+}
+
+.inline-chat-message.user-message {
+    background: var(--vscode-editor-selectionBackground);
+    margin-left: 20px;
+}
+
+.inline-chat-message.ai-message {
+    background: var(--vscode-editor-lineHighlightBackground);
+    margin-right: 20px;
+}
+
+.inline-chat-message.loading {
+    opacity: 0.7;
+}
+
+.inline-chat-container .ui.icon.button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    padding: 4px;
+    min-height: auto;
+    min-width: auto;
+    opacity: 0.7;
+}
+
+.inline-chat-container .ui.icon.button:hover {
+    opacity: 1;
+}
+@media (display-mode: standalone) {
+    .judge0-standalone-hidden {
+        display: none !important;
+    }
+}
