@@ -2,6 +2,9 @@
 import theme from "./theme.js";
 import { sourceEditor } from "./ide.js";
 
+
+// can maybe tell the model below in the prompt to format any code given back by the model in markdown format if you find that it's giving code in regular text format.
+
 const THREAD = [
     {
         role: "system",
